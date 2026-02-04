@@ -1,5 +1,7 @@
 package curriculum.b;
 
+import java.util.Scanner;
+
 public class Question2 {
 
 	public static void main(String[] args) {
@@ -58,6 +60,7 @@ public class Question2 {
 		 * Q5:値の正負の判別
 		 ----------------------------------------*/
 		int num = 0;
+		//正負の判別
 		if (num > 0) {
 			System.out.println("正の数です");
 		} else if (num < 0) {
@@ -69,6 +72,110 @@ public class Question2 {
 		/*----------------------------------------
 		 * Q6:偶奇判別
 		 ----------------------------------------*/
+		//Scannerを用意
+		Scanner sc = new Scanner(System.in);
+		//コンソール入力した値をvalueに代入
+		int value = sc.nextInt();
+		//,2で割ったあまりが0になることを利用して偶奇判定
+		if (value % 2 == 0) {
+			System.out.println("偶数です");
+		} else {
+			System.out.println("奇数です");
+		}
+
+		/*----------------------------------------
+		 * Q7:点数の評価
+		 ----------------------------------------*/
+		//Scannerを用意
+		Scanner sc2 = new Scanner(System.in);
+		//コンソール入力から値を代入
+		int score2 = sc2.nextInt();
+		//点数の評価
+		if (score2 >= 90) {
+			System.out.println("優");
+		} else if (score2 >= 70) {
+			System.out.println("良");
+		} else if (score2 >= 50) {
+			System.out.println("可");
+		} else {
+			System.out.println("不可");
+		}
+
+		/*----------------------------------------
+		 * Q8:無効な入力の警告
+		 ----------------------------------------*/
+		Scanner sc3 = new Scanner(System.in);
+		//コンソール入力で文字列を参照
+		String input = sc3.nextLine();
+		//nullとから文字に反応
+		if (input == null || input.isEmpty()) {
+			System.out.println("入力が無効です");
+		}
+
+		/*----------------------------------------
+		 * Q9:曜日の判別
+		 ----------------------------------------*/
+		//Scannerを用意
+		Scanner sc4 = new Scanner(System.in);
+		// 曜日を表す（1=月曜日, 2=火曜日, …, 7=日曜日）
+		int day = sc4.nextInt();
+		switch (day) {
+		case 1:
+			System.out.println("今日は月曜日です");
+			break;
+		case 2:
+			System.out.println("今日は火曜日です");
+			break;
+		case 3:
+			System.out.println("今日は水曜日です");
+			break;
+		case 4:
+			System.out.println("今日は木曜日です");
+			break;
+		case 5:
+			System.out.println("今日は金曜日です");
+			break;
+		case 6:
+			System.out.println("今日は土曜日です");
+			break;
+		case 7:
+			System.out.println("今日は日曜日です");
+			break;
+		default:
+			System.out.println("無効な値です");
+		}
+
+		/*----------------------------------------
+		 * Q10:季節の判別
+		 ----------------------------------------*/
+		//Scannerを用意
+		Scanner sc5 = new Scanner(System.in);
+		//monthには月の数字が入る（例：1月→１）
+		int month = sc5.nextInt();
+		switch (month) {
+		case 12:
+		case 1:
+		case 2:
+			System.out.println("冬");
+			break;
+		case 3:
+		case 4:
+		case 5:
+			System.out.println("春");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			System.out.println("夏");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			System.out.println("秋");
+			break;
+		default:
+			System.out.println("無効な月です");
+		}
 
 	}
 
