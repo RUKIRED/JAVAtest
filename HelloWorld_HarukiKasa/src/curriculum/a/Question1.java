@@ -178,7 +178,6 @@ public class Question1 {
 		String text2 = text.replace("Java", "Python");
 		//変更後の文をコンソールに表示
 		System.out.println(text2);
-
 	}
 
 }

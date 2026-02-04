@@ -86,10 +86,8 @@ public class Question2 {
 		/*----------------------------------------
 		 * Q7:点数の評価
 		 ----------------------------------------*/
-		//Scannerを用意
-		Scanner sc2 = new Scanner(System.in);
 		//コンソール入力から値を代入
-		int score2 = sc2.nextInt();
+		int score2 = sc.nextInt();
 		//点数の評価
 		if (score2 >= 90) {
 			System.out.println("優");
@@ -104,9 +102,10 @@ public class Question2 {
 		/*----------------------------------------
 		 * Q8:無効な入力の警告
 		 ----------------------------------------*/
-		Scanner sc3 = new Scanner(System.in);
+		//改行エラーを防ぐ
+		sc.nextLine();
 		//コンソール入力で文字列を参照
-		String input = sc3.nextLine();
+		String input = sc.nextLine();
 		//nullとから文字に反応
 		if (input == null || input.isEmpty()) {
 			System.out.println("入力が無効です");
@@ -115,10 +114,8 @@ public class Question2 {
 		/*----------------------------------------
 		 * Q9:曜日の判別
 		 ----------------------------------------*/
-		//Scannerを用意
-		Scanner sc4 = new Scanner(System.in);
 		// 曜日を表す（1=月曜日, 2=火曜日, …, 7=日曜日）
-		int day = sc4.nextInt();
+		int day = sc.nextInt();
 		switch (day) {
 		case 1:
 			System.out.println("今日は月曜日です");
@@ -149,9 +146,9 @@ public class Question2 {
 		 * Q10:季節の判別
 		 ----------------------------------------*/
 		//Scannerを用意
-		Scanner sc5 = new Scanner(System.in);
+
 		//monthには月の数字が入る（例：1月→１）
-		int month = sc5.nextInt();
+		int month = sc.nextInt();
 		switch (month) {
 		case 12:
 		case 1:
@@ -176,7 +173,7 @@ public class Question2 {
 		default:
 			System.out.println("無効な月です");
 		}
-
+		//スキャナーを閉じてリソースを解放
+		sc.close();
 	}
-
 }
