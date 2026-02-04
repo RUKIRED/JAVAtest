@@ -158,6 +158,27 @@ public class Question1 {
 		boolean result = (a < b);
 		//コンソールに表示
 		System.out.println(result);
+
+		/*********************************************************
+		 * Q12:条件演算子(三項演算子)
+		***********************************************************/
+		//xに15を代入
+		int x = 15;
+		//xが10以上かの判別
+		boolean isPassed = (x >= 10);
+		//x が 10 以上なら "OK"、そうでなければ "NG" をコンソールに表示
+		System.out.println(isPassed ? "OK" : "NG");
+
+		/*********************************************************
+		 * Q13:文字列の置換
+		***********************************************************/
+		//textを宣言・初期化
+		String text = "私はJavaが好きです。Javaは楽しい!";
+		//textのJavaをPytho置換
+		String text2 = text.replace("Java", "Python");
+		//変更後の文をコンソールに表示
+		System.out.println(text2);
+
 	}
 
 }
