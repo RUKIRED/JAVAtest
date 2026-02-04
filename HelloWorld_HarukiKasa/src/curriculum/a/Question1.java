@@ -22,7 +22,7 @@ public class Question1 {
 		// 変数letterの初期値を設定
 		char letter = '\u0000';
 		// 変数lettersの初期値を設定
-		String letters = "null";
+		String letters = null;
 		// 変数isBooleanの初期値を設定
 		boolean isBoolean = false;
 
