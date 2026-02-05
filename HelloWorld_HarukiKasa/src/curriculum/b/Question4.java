@@ -100,7 +100,6 @@ public class Question4 {
 		} else {
 			System.out.println(input + " は配列に含まれていません");
 		}
-		scanner.close();
 
 		/*----------------------------------
 		 * Q7:
@@ -167,7 +166,7 @@ public class Question4 {
 				}
 			}
 		}
-
+		scanner.close();
 	}
 
 }
