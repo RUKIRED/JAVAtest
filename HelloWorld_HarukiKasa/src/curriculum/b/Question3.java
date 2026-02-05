@@ -1,5 +1,6 @@
 package curriculum.b;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Question3 {
@@ -117,6 +118,7 @@ public class Question3 {
 		}
 		//num=0で表示
 		System.out.println("終了しました");
+		sc.nextLine();
 		/*
 		 * int input;
 		 * do {
@@ -125,11 +127,9 @@ public class Question3 {
 		 * System.out.println("終了しました");
 		 * こっちの方が簡潔で優秀
 		 */
-		//スキャナーを終了
-		sc.close();
 
 		/*----------------------------------------
-		 * Q12:
+		 * Q11:
 		 ----------------------------------------*/
 		//行に対応する変数l
 		for (int l = 1; l <= 9; l++) {
@@ -141,6 +141,44 @@ public class Question3 {
 			//9つ表示されたら改行
 			System.out.println();
 		}
+
+		/*----------------------------------------
+		 * Q12:
+		 ----------------------------------------*/
+		// 1. ユーザーからの入力を受け取る
+		String inputLine = sc.nextLine();
+		// 2. 入力された文字列を「、」で分割して配列にする
+		String[] items = inputLine.split("、");
+		// 3. ランダムな値（0〜11）を生成
+		Random rand = new Random();
+		int tvCount = rand.nextInt(12); // 0〜11のランダム
+		int displayCount = 11 - tvCount; // 合計が11になるように計算
+		// 4. 拡張for文で各商品を処理
+		for (String item : items) {
+			// 5. Switch文で分岐（if文は使用不可）
+			switch (item) {
+			case "パソコン":
+			case "冷蔵庫":
+			case "扇風機":
+			case "洗濯機":
+			case "加湿器":
+				System.out.println(item + "の残り台数は " + rand.nextInt(12) + "台です");
+				break;
+
+			case "テレビ":
+			case "ディスプレイ":
+				// 6. 条件演算子を使用して出力する値を切り替える
+				int count3 = (item.equals("テレビ")) ? tvCount : displayCount;
+				System.out.println(item + "の残り台数は " + count3 + "台です");
+				break;
+
+			default:
+				// 7. 指定の商品以外の場合
+				System.out.println("『 " + item + " 』は指定の商品ではありません");
+				break;
+			}
+		}
+		sc.close();
 
 	}
 
