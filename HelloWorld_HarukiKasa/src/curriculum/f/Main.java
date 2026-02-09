@@ -7,7 +7,7 @@ public class Main {
 		Employee emp = new Employee();
 		emp.employeeId = "E001";
 		emp.name = "佐藤太郎";
-		emp.showInfo();
+		emp.showInfo();//02/09 11:36修正
 
 	}
 
