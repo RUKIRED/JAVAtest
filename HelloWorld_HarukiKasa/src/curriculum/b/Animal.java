@@ -2,9 +2,9 @@ package curriculum.b;
 
 public class Animal {
 	//それぞれのデータの型を決める
-	String name;
-	double length;
-	int velocity;
+	private String name;
+	private double length;
+	private int velocity;
 
 	//Stringのgetter
 	public String getName() {
