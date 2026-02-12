@@ -30,5 +30,6 @@ public class Questinon6 {
 			}
 			System.out.println("---");
 		}
+
 	}
 }
