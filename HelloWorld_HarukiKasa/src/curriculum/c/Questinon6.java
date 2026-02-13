@@ -1,5 +1,7 @@
 package curriculum.c;
 
+import java.util.Scanner;
+
 public class Questinon6 {
 
 	public static void main(String[] args) {
@@ -9,10 +11,13 @@ public class Questinon6 {
 
 		Player player = new Player();
 		Cpu cpu = new Cpu();
+		Scanner sc = new Scanner(System.in);
 
 		while (true) {
+			//プレイヤー専用表示
+			player.choose();
 			// 1. お互いの手を決める
-			int p = player.choose();
+			int p = sc.nextInt();
 			int c = cpu.choose();
 
 			// 2. JankenUtilを使って名前を表示（static呼び出し）
@@ -25,8 +30,10 @@ public class Questinon6 {
 			} else if ((p == 0 && c == 1) || (p == 1 && c == 2) || (p == 2 && c == 0)) {
 				System.out.println("あなたの勝ちです！");
 				break; // ループを抜けて終了
-			} else {
+			} else if ((p == 2 && c == 1) || (p == 0 && c == 2) || (p == 1 && c == 0)) {
 				System.out.println("あなたの負けです。");
+			} else {
+				System.out.println("0~1を入力してください。");
 			}
 			System.out.println("---");
 		}
