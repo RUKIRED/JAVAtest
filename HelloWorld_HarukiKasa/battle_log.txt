@@ -1,0 +1,19 @@
+Player生成: asda (HP:88, AT:14, SP:11)
+Daemon出現: Daemon (HP:85, AT:12, SP:6)
+--------------------------------
+スピード判定: asda が先攻
+Turn 1: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 71)
+Turn 2: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 76)
+Turn 3: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 57)
+Turn 4: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 64)
+Turn 5: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 43)
+Turn 6: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 52)
+Turn 7: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 29)
+Turn 8: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 40)
+Turn 9: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 15)
+Turn 10: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 28)
+Turn 11: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 1)
+Turn 12: Daemon の攻撃 -> asda に 12 ダメージ (残りHP: 16)
+Turn 13: asda の攻撃 -> Daemon に 14 ダメージ (残りHP: 0)
+--------------------------------
+勝者: asda
