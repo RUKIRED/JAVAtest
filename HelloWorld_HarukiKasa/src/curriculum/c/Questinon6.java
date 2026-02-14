@@ -14,7 +14,7 @@ public class Questinon6 {
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-			//プレイヤー専用表示
+			// プレイヤー専用表示
 			player.choose();
 			// 1. お互いの手を決める
 			int p = sc.nextInt();
@@ -37,6 +37,7 @@ public class Questinon6 {
 			}
 			System.out.println("---");
 		}
+		sc.close();
 
 	}
 }
