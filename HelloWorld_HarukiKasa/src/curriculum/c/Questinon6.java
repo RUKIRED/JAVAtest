@@ -16,11 +16,18 @@ public class Questinon6 {
 		while (true) {
 			// プレイヤー専用表示
 			player.choose();
-			// 1. お互いの手を決める
+			// 1. Playerの手を決める
 			int p = sc.nextInt();
-			int c = cpu.choose();
+
+			// Playerの手の判定
+			if (p < 0 || p > 2) {
+				System.out.println("0,1,2のいずれかを入力してください");
+				System.out.println("---");
+				continue;
+			}
 
 			// 2. JankenUtilを使って名前を表示（static呼び出し）
+			int c = cpu.choose();// CPUの手を決める
 			System.out.println("あなたの手: " + JankenUtil.toHandName(p));
 			System.out.println("CPUの手: " + JankenUtil.toHandName(c));
 
